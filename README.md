@@ -27,11 +27,11 @@ This Project is made with the help of Django and ->
 
 ## Result 
 
-![result1](hello/zResult(no code)/Picture1.jpg)
-![result2](/zResult(no code)/Picture2.jpg)
-![result3](/zResult(no code)/Picture3.jpg)
-![result4](/zResult(no code)/Picture4.jpg)
-![result5](/zResult(no code)/Picture5.jpg)
+![result1]([hello/zResult(no code)/Picture1.jpg](https://github.com/nishaaannnt/FarmerGuide/blob/main/hello/zResult(no%20code)/Picture1.jpg))
+![result2]([/zResult(no code)/Picture2.jpg](https://github.com/nishaaannnt/FarmerGuide/blob/main/hello/zResult(no%20code)/Picture1.jpg))
+![result3]([/zResult(no code)/Picture3.jp](https://github.com/nishaaannnt/FarmerGuide/blob/main/hello/zResult(no%20code)/Picture1.jpg)g)
+![result4]([/zResult(no code)/Picture4.jpg](https://github.com/nishaaannnt/FarmerGuide/blob/main/hello/zResult(no%20code)/Picture1.jpg))
+![result5]([/zResult(no code)/Picture5.jpg](https://github.com/nishaaannnt/FarmerGuide/blob/main/hello/zResult(no%20code)/Picture1.jpg))
 
 
 
