@@ -27,11 +27,11 @@ This Project is made with the help of Django and ->
 
 ## Result 
 
-[result1](hello/zResult(no code)/Picture1.jpg)
-[result2](/zResult(no code)/Picture2.jpg)
-[result3](/zResult(no code)/Picture3.jpg)
-[result4](/zResult(no code)/Picture4.jpg)
-[result5](/zResult(no code)/Picture5.jpg)
+![result1](hello/zResult(no code)/Picture1.jpg)
+![result2](/zResult(no code)/Picture2.jpg)
+![result3](/zResult(no code)/Picture3.jpg)
+![result4](/zResult(no code)/Picture4.jpg)
+![result5](/zResult(no code)/Picture5.jpg)
 
 
 
