@@ -4,6 +4,6 @@ This Project is made with the help of Django and ->
 2. MySQL
 3. HTML/ CSS 
 
-##What does it basically do?
+## What does it basically do?
 
 
