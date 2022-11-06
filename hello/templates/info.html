@@ -1,0 +1,238 @@
+{%extends "base.html"%} 
+{% block title %}Form{% endblock title %} 
+{% block head%} 
+body { font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: white; } body { font-family: 'Lato', sans-serif; } h1 {
+margin-bottom: 40px; } label { color: #333; } .btn-send { font-weight: 300;
+text-transform: uppercase; letter-spacing: 0.2em; width: 80%; margin-left: 3px;
+} .help-block.with-errors { color: #ff5050; margin-top: 5px; } .card{
+margin-left: 10px; margin-right: 10px; } 
+{% endblock head %} 
+{% block body %}
+
+<form action="#" method="post">
+  {% csrf_token %} {% load static %}
+  <div class="imgcontainer">
+    <img
+      src="/static/img/banner.jpg"
+      class="w-100"
+      alt="Avatar"
+      class="avatar"
+    />
+  </div>
+  <div class="container-fluid my-3">
+    <div class="text-center mt-5">
+      <h1>Crop Cultivation Report</h1>
+    </div>
+    <hr class="featurette-divider">
+    <br>
+
+    <div class="row">
+      <div class="col-lg-7 mx-auto">
+        <div class="card mt-2 mx-auto p-4 bg-light">
+          <div class="card-body bg-light">
+            <div class="container">
+              <form id="contact-form" role="form">
+                <div class="controls py5">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_name">Firstname *</label>
+                        <input
+                          type="text"
+                          name="first_name"
+                          class="form-control"
+                          placeholder="Please enter your firstname *"
+                          required="required"
+                          data-error="Firstname is required."
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_lastname">Lastname *</label>
+                        <input
+                          type="text"
+                          name="surname"
+                          class="form-control"
+                          placeholder="Please enter your lastname *"
+                          required="required"
+                          data-error="Lastname is required."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row py-3">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_need">Worked as*</label>
+                        <select
+                          name="work"
+                          type="text"
+                          class="form-control"
+                          required="required"
+                          data-error="Please specify your need."
+                        >
+                          <option value="" selected disabled>
+                            --Select Your Role--
+                          </option>
+                          <option>Land Owner</option>
+                          <option>Land Labourer</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_need">State *</label>
+                        <select
+                          name="state"
+                          type="text"
+                          class="form-control"
+                          required="required"
+                          data-error="Please specify your need.">
+                          <option value="" selected disabled>
+                            --Select Your State--
+                          </option>
+                          <option>Andhra Pradesh</option>
+                          <option>Arunachal Pradesh</option>
+                          <option>Assam</option>
+                          <option>Bihar</option>
+                          <option>Chhattisgarh</option>
+                          <option>Goa</option>
+                          <option>Gujarat</option>
+                          <option>Haryana</option>
+                          <option>Himachal Pradesh</option>
+                          <option>Jharkhand</option>
+                          <option>Karnataka</option>
+                          <option>Kerala</option>
+                          <option>Madhya Pradesh</option>
+                          <option>Maharashtra</option>
+                          <option>Manipur</option>
+                          <option>Meghalaya</option>
+                          <option>Mizoram</option>
+                          <option>Nagaland</option>
+                          <option>Odisha</option>
+                          <option>Punjab</option>
+                          <option>Rajasthan</option>
+                          <option>Sikkim</option>
+                          <option>Tamil Nadu</option>
+                          <option>Telangana</option>
+                          <option>Tripura</option>
+                          <option>Uttarakhand</option>
+                          <option>Uttar Pradesh</option>
+                          <option>West Bengal</option>
+                        </select>
+                      </div>
+                    </div>
+                      <div class="col-md-6 py-3">
+                        <div class="form-group">
+                          <label for="form_need">Crop Grown*</label>
+                          <select
+                            name="crop"
+                            type="text"
+                            class="form-control"
+                            required="required"
+                            data-error="Please specify your need.">
+                            <option value="" selected disabled>
+                              --Select Your Crop--
+                            </option>
+                            <option>Rice</option>
+                            <option>Wheat</option>
+                            <option>Millets</option>
+                            <option>Pulses</option>
+                            <option>Tea</option>
+                            <option>Coffee</option>
+                            <option>Sugarcane</option>
+                            <option>Oil Seeds</option>
+                            <option>Cotton</option>
+                            <option>Jute</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6 py-3">
+                        <div class="form-group">
+                          <label for="form_need">Fertilizer Used*</label>
+                          <select
+                            name="fertilizer"
+                            type="text"
+                            class="form-control"
+                            required="required"
+                            data-error="Please specify your need.">
+                            <option value="" selected disabled>
+                              --Select Your Role--
+                            </option>
+                            <option>Organic(cowdung etc.)</option>
+                            <option>Inorganic(chemical)</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-md-6 ">
+                    <div class="form-group">
+                      <label for="form_need">Crop Used for*</label>
+                      <select
+                        name="crop_use"
+                        type="text"
+                        class="form-control"
+                        required="required"
+                        data-error="Please specify your need.">
+                        <option value="" selected disabled>
+                          --Select Your Crop--
+                        </option>
+                        <option>Domestic Use</option>
+                        <option>Selling</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 ">
+                    <div class="form-group">
+                      <label for="form_need">Used Government Subsidy*</label>
+                      <select
+                        name="gov_sub"
+                        type="text"
+                        class="form-control"
+                        required="required"
+                        data-error="Please specify your need.">
+                        <option value="" selected disabled>
+                          --Select Your Answer--
+                        </option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+              </div>
+              </div>
+                  <div class="row">
+                    <div class="col-md-12 py-3">
+                      <div class="form-group">
+                        <label for="form_message">Mobile Number*</label>
+                        <input type="text" class="form-control" name="mobile" placeholder="88888 88888" maxlength="10"   required/>    
+      
+                      </div>
+                    </div>
+                    <center>
+                      <div class="col-md-12 py-4">
+                        <input
+                          type="submit"
+                          class="btn btn-success btn-send pt-2 btn-block"
+                          value="Send Report"
+                        />
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- /.8 -->
+      </div>
+      <!-- /.row-->
+    </div>
+  </div>
+</form>
+{% endblock body %}

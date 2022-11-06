@@ -1,0 +1,153 @@
+{%extends "base.html"%}
+
+{% block title %}About{% endblock title %}
+
+{% block head %}
+
+.bd-placeholder-img {
+font-size: 1.125rem;
+text-anchor: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+font-size: 3.5rem;
+}
+}
+
+.b-example-divider {
+height: 3rem;
+background-color: rgba(0, 0, 0, .1);
+border: solid rgba(0, 0, 0, .15);
+border-width: 1px 0;
+box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+flex-shrink: 0;
+width: 1.5rem;
+height: 100vh;
+}
+.fw-normal{
+
+}
+.bi {
+vertical-align: -.125em;
+fill: currentColor;
+}
+
+.nav-scroller {
+position: relative;
+z-index: 2;
+height: 2.75rem;
+overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+display: flex;
+flex-wrap: nowrap;
+padding-bottom: 1rem;
+margin-top: -1px;
+overflow-x: auto;
+text-align: center;
+white-space: nowrap;
+-webkit-overflow-scrolling: touch;
+}
+
+p{
+    opacity:0.8;
+}
+
+{% endblock head %}
+{% block body %}
+
+<div class="container-fluid">
+    <h1 class='text-center my-5'>Farmer's Guide</h1>
+
+    {% comment %} <p class="mx-5">Farmer's Guide is a project made using Django, Bootstrap and MySQL.</p> {% endcomment%}
+
+
+    <hr class="featurette-divider">
+    <br>
+    <div class="container text-center">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row py-4">
+            <div class="col">
+                <!-- remove below  -->
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg> 
+                <!-- <img src="/static/img/4.jpg" class="rounded-circle" width="140" height="140" alt=""> -->
+
+                <br>
+                <br> 
+                <h2 class="fw-normal">Teammate</h2>
+                <br>
+
+                
+            </div><!-- /.col-lg-4 -->
+            <div class="col">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                </svg>
+                <br>
+                <br> 
+                <h2 class="fw-normal">Leader Name</h2>
+                <br>
+                
+            </div><!-- /.col-lg-4 -->
+            <div class="col">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                        dy=".3em">140x140</text>
+                 </svg> 
+             <br>
+                <br> 
+               
+                <h2 class="fw-normal">Teammate</h2>
+                <br>
+                
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <hr class="featurette-divider">
+        <br>
+        <br>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">COLLEGE NAME<span
+                        class="text-muted">, City</span></h2>
+                        <br>
+                <p class="lead">Description about your batch and class. Add College logo beside this.</p>
+                <b><p class="lead">(Beside this is my college Logo Change it as per your wish)</p></b>
+            </div>
+            <div class="col-md-5">
+                <img src="/static/img/pce.jpg" width="80%" height="85%" alt="pce">
+                </svg>
+
+            </div>
+
+
+        </div>
+
+        <!-- /END THE FEATURETTES -->
+
+    </div>
+    {% endblock body %}

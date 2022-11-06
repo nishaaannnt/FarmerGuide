@@ -1,0 +1,82 @@
+{%extends "base.html"%}
+
+{% block title %}Login{% endblock title %}
+{% block head %}
+
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: white;
+
+    }
+    button{
+        background-color: #5D8896;
+        width: 25%;
+        padding: 10px;
+        color: white;
+        border: none;
+        float: center;
+        font-size: 15px;
+    }
+    label{
+        font-size: 20px;
+    }
+    form{
+        border: 3px solid #5D8896;
+    }
+    input[type=username],input[type=password]{
+        width: 50%;
+        font-size: 15px;
+        margin: 8px 0px;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid #5D8896;
+        box-sizing: border-box;
+    }
+    button:hover{
+        opacity:0.7;
+
+    }
+    .container{
+        padding: 5 px;
+        background-color: white;
+    }
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+      
+    img.avatar {
+        width: 20%;
+        border-radius: 50%;
+    }  
+
+{% endblock head %}
+
+{% block body %}
+<br>
+<center><h1>Login to Enter
+</h1></center>
+<center><h3></h3></center>
+<br>
+<form action="#" method="post">
+    {% csrf_token %}
+    {% load static %}
+    <center><div class="container-center">
+        <div class="imgcontainer">
+            <img src="/static/img/login.jpg" alt="Avatar" class="avatar">
+        </div>
+        <label for ='username'><b>UserName &nbsp; </b></label>
+        <input type="username" placeholder="Enter username" name="username" float="right"  required><br>  
+        <label for='password'><b>Password &nbsp;&nbsp; </b></label>
+        <input type="password" placeholder="Enter Password" name="password" required><br>  
+        <br>
+        <button type="submit"><b>Login</b></button><br>     
+        <br>
+        Don't have account <a href="/signup" style="color:blue"> register </a>
+        <br>
+        <br>
+        <br>
+    </div></center>
+</form>
+  
+{% endblock body %}
