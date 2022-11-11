@@ -33,5 +33,5 @@ This Project is made with the help of Django and ->
 ![result4](https://github.com/nishaaannnt/FarmerGuide/blob/main/hello/zResult(no%20code)/Picture4.jpg)
 ![result5](https://github.com/nishaaannnt/FarmerGuide/blob/main/hello/zResult(no%20code)/Picture5.jpg)
 
-
+Made by- Nishant Dixit, SE Btech CS
 
