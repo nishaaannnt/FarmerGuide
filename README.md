@@ -1,4 +1,7 @@
 # FarmerGuide - Python Project 
+
+<h2>I CAN'T HOST THE WEBSITE AS IT SHOWS SOME PROBLEM BUT YOU CAN SEE THE CODE ;)</h2>
+
 This Project is made with the help of Django and ->
 1. Bootstrap
 2. MySQL
